@@ -1,0 +1,149 @@
+/* mulish-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/mulish-v18-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mulish-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/mulish-v18-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mulish-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/mulish-v18-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Mulish";
+}
+
+.container {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-top: 35px;
+    margin-bottom: 80px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-item {
+    margin-right: 40px;
+}
+
+.header-logo-element {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 41px;
+    letter-spacing: 0%;
+    background-color: #458FF6;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 12px;
+}
+
+.header-logo-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #233348;
+}
+
+.header-nav-item:nth-child(5) {
+    margin-right: 0;
+}
+
+.header-nav-link {
+    color: rgb(31, 21, 52, 0.5);
+}
+
+.header-nav-link:hover {
+    color: #1f1534;
+}
+
+.intro-container {
+    position: relative;
+    background-image: url(../img/illustration.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    padding: 130px 0;
+}
+.intro-container::before{
+    position: absolute;
+    width: 131px;
+    height: 115px;
+    top: 0;
+    left: -239px;
+    content: '';
+    background-image: url(../img/element.png);
+}
+.intro-content {
+    width: 445px;
+
+}
+
+.intro-slogan {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin-bottom: 45px;
+}
