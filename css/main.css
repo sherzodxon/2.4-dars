@@ -48,6 +48,54 @@ a {
 
 body {
     font-family: "Mulish";
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    border: 2px solid rgba(69, 143, 246, 1);
+    border-radius: 55px;
+    padding: 18px 51px 16px 51px;
+    color: #fff;
+    background-color: rgba(69, 143, 246, 1);
+
+}
+
+.link--light {
+    color: rgba(69, 143, 246, 1);
+    background-color: transparent;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    padding-bottom: 26px;
+    margin-bottom: 33px;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    width: 56px;
+    height: 2px;
+    content: '';
+    background-color: black;
+    bottom: 0;
+    left: 0;
+}
+
+.title--center {
+    text-align: center;
+}
+
+.title--center::after {
+    left: calc(50% - 28px);
 }
 
 .container {
@@ -61,21 +109,21 @@ body {
     margin-bottom: 80px;
 }
 
-.header-container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav-list {
+.header__nav-list {
     display: flex;
 }
 
-.header-nav-item {
+.header__nav-item {
     margin-right: 40px;
 }
 
-.header-logo-element {
+.logo__element {
     display: inline-block;
     width: 41px;
     height: 41px;
@@ -90,7 +138,7 @@ body {
     margin-right: 12px;
 }
 
-.header-logo-link {
+.logo {
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
@@ -98,19 +146,33 @@ body {
     color: #233348;
 }
 
-.header-nav-item:nth-child(5) {
+.header__nav-item:nth-child(5) {
     margin-right: 0;
 }
 
-.header-nav-link {
+.header__nav-item:first-child {
+    .header__nav-link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: rgba(31, 21, 52, 1);
+    }
+}
+
+.header__nav-link {
     color: rgb(31, 21, 52, 0.5);
 }
 
-.header-nav-link:hover {
+.header__nav-link:hover {
     color: #1f1534;
 }
 
-.intro-container {
+.intro {
+    margin-bottom: 111px;
+}
+
+.intro__container {
     position: relative;
     background-image: url(../img/illustration.png);
     background-repeat: no-repeat;
@@ -118,7 +180,8 @@ body {
     background-position: right center;
     padding: 130px 0;
 }
-.intro-container::before{
+
+.intro__container::before {
     position: absolute;
     width: 131px;
     height: 115px;
@@ -127,12 +190,13 @@ body {
     content: '';
     background-image: url(../img/element.png);
 }
-.intro-content {
+
+.intro__content {
     width: 445px;
 
 }
 
-.intro-slogan {
+.intro__slogan {
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
@@ -140,10 +204,73 @@ body {
     margin-bottom: 25px;
 }
 
-.intro-text {
+.intro__text {
     font-weight: 300;
     font-size: 21px;
     line-height: 32px;
     letter-spacing: 0%;
     margin-bottom: 45px;
+}
+
+.service {
+    margin-bottom: 220px;
+    background: url(../img/service-bg.png) no-repeat center left;
+    background-size: contain;
+}
+
+.service__text {
+    text-align: center;
+    width: 952px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+}
+
+.service__item {
+    width: 350px;
+    padding: 166px 45px 47px 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position-x: 38px;
+    background-position-y: 58px;
+    background-color: #fff;
+}
+.service__item:nth-child(2){
+    background-image: url(../img/service-second.png);
+}
+.service__item:nth-child(3) {
+    margin-right: 0;
+}
+
+.service__item:nth-child(6) {
+    margin-right: 0;
+}
+
+.service__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 56px;
+    letter-spacing: 0%;
+
+}
+
+.service__item-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
 }
