@@ -69,6 +69,10 @@ body {
     color: rgba(69, 143, 246, 1);
     background-color: transparent;
 }
+.link--download{
+    padding-right: 68px;
+    background:url(../img/download.png) no-repeat 150px  center;
+}
 
 .title {
     font-weight: 700;
@@ -238,9 +242,10 @@ body {
     width: 1120px;
     position: relative;
 }
-.service__list::after{
+
+.service__list::after {
     position: absolute;
-    
+
 }
 
 .service__item {
@@ -256,9 +261,11 @@ body {
     background-position-y: 58px;
     background-color: #fff;
 }
-.service__item:nth-child(2){
+
+.service__item:nth-child(2) {
     background-image: url(../img/service-second.png);
 }
+
 .service__item:nth-child(3) {
     margin-right: 0;
 }
@@ -281,4 +288,39 @@ body {
     line-height: 28px;
     letter-spacing: 0%;
 
+}
+
+.product {
+    margin-bottom: 22px;
+}
+
+.product__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__item {
+    display: flex;
+    margin-bottom: 229px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__item:nth-child(even) {
+    flex-direction: row-reverse;
+    .product__item-content{
+        width: 420px;
+    }
+}
+
+.product__item-content {
+    width: 486px;
+}
+
+.product__item-description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-bottom: 40px;
 }
