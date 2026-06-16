@@ -48,7 +48,7 @@ a {
 
 body {
     font-family: "Mulish";
-    width: 1600px;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .container {
-    width: 1120px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -218,6 +218,7 @@ body {
     background-size: contain;
 }
 
+
 .service__text {
     text-align: center;
     width: 952px;
@@ -232,7 +233,14 @@ body {
 .service__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     margin-bottom: 34px;
+    width: 1120px;
+    position: relative;
+}
+.service__list::after{
+    position: absolute;
+    
 }
 
 .service__item {
