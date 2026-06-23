@@ -324,3 +324,21 @@ body {
     letter-spacing: 0%;
     margin-bottom: 40px;
 }
+.pagination__list{
+    width: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.pagination__button{
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: rgba(91, 155, 243, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination__button--active{
+    background-color: rgba(91, 155, 243, 1);
+}
